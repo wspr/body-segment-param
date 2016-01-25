@@ -2,7 +2,9 @@
 
 Repository of body segment parameter models.
 
-## Proportionality mass models
+## Relative mass models
+
+These are the basic "segment YY is ZZ% of the body mass" models.
 
 * `harless1860.csv`
     * Harless (1860)
@@ -41,3 +43,49 @@ Repository of body segment parameter models.
     * From Ma et al. (2011), "Nonlinear regression equations for segmental mass-inertial characteristics of Korean adults estimated using three-dimensional range scan data", Applied Ergonomics.
     * Contains both male and female mass proportions
     * Korean population
+
+## Zatsiorsky's CT scan data
+
+This data has been extracted from "Kinetics of Human Motion", input manually by two different people and cross-checked in Matlab for accuracy.
+
+### Mean data
+
+* `zatz-mean-female-bsp.csv`:    Table A2.5
+* `zatz-mean-female-comgyr.csv`: Table A2.11
+* `zatz-mean-male-comgyr.csv`:   Table A2.11
+
+### Weight/height regression models
+
+Table A2.6:
+
+* `zatz2-male-com.csv`
+* `zatz2-male-mass.csv`
+* `zatz2-male-moi-ap.csv`
+* `zatz2-male-moi-ml.csv`
+* `zatz2-male-moi-si.csv`
+
+Table A2.7:
+
+* `zatz2-female-com.csv`
+* `zatz2-female-mass.csv`
+* `zatz2-female-moi-ap.csv`
+* `zatz2-female-moi-ml.csv`
+* `zatz2-female-moi-si.csv`
+
+### Geometric regression models (Table A2.8)
+
+* `zatzN-male-abdo.csv`
+* `zatzN-male-arm.csv`
+* `zatzN-male-foot.csv`
+* `zatzN-male-forearm.csv`
+* `zatzN-male-hand.csv`
+* `zatzN-male-headneck.csv`
+* `zatzN-male-leg.csv`
+* `zatzN-male-pelvis.csv`
+* `zatzN-male-thigh.csv`
+* `zatzN-male-thorax.csv`
+
+### Nonlinear geometric regression models (Table A2.9)
+
+* `zatzNL-female.csv`
+* `zatzNL-male.csv`
