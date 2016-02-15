@@ -14,6 +14,15 @@ Models are divided into multiple folders and are described briefly below. Please
 
 These are the basic "segment YY is ZZ% of the body mass" models.
 
+To permit consistency of comparison between models, all models are presented with (at least) two columns.
+The first is "original mass", which is the value given by the study.
+In some cases, these masses will sum to the "average mass" in kg of the participants in the study.
+In other cases (usually cadaveric), the masses are given in percentage of total body mass, but this total will not quite equal 100% due to the dissection processes.
+
+All data is then presented in a "rescaled mass" column, pre-calculated to meaningless precision, such that the sum of the segments exactly equals 100%.
+This results in a few cases where, due to rounding errors in the publications, data is presented that sums to, say, 99.8% and the rescaled column is, to all extents and purposes equal to the original column modulo some small discrepancies.
+In other cases, care was evidently taken to ensure the segments summed to exactly 100% even with a precision of only 0.1 percentage points.
+
 * `harless1860.csv`
     * Harless (1860)
     * Found in zats's book and Clauser (1969).
@@ -29,7 +38,7 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 
 * `fujikawa1963.csv`
     * Found in Clauser (1969): Fujikawa (1963).
-    * Japanese population
+    * Japanese population.
     * Clauser omits the Fujikawa values from his summary table citing anthropomorphic differences between Caucasian and Japanese populations.
 
 * `clauser1969.csv`: Clauser (1969)
@@ -43,27 +52,30 @@ These are the basic "segment YY is ZZ% of the body mass" models.
     * N = 100.
     * Includes standard deviation.
 
-* `jensen1994.csv`
+* `jensen1994F.csv`/`jensen1994M.csv`
     * From Jensen and Fletcher (1994), "Distribution of mass to the segments of elderly males and females", Journal of Biomechanics
     * Elderly population
 
 * `cheng2000`
     * From Cheng et al. (2000), "Segment inertial properties of Chinese adults determined from magnetic resonance imaging", Clinical Biomechanics.
-    * Chinese population
+    * Chinese population.
+    * Includes standard deviation.
+    * Includes CoM.
 
-* `pavol2002`
+* `pavol2002F.csv`/`pavol2002M.csv`
     * Pavol et al (2002), "Body segment inertial parameter estimation for the general population of older adults", Journal of Biomechanics
-    * Older Caucasian population
+    * Older Caucasian population.
+    * Includes standard deviation.
 
 * `chen2011.csv`
     * From Chen et al. (2011), "A method for estimating subject-specific body segment inertial parameters in human movement analysis", Gait & Posture.
     * A kinematic method, unusually.
-    * Contains standard deviation.
+    * Includes standard deviation.
+    * Includes CoM.
     * N = 12.
 
-* `ma2011.csv`
+* `ma2011F.csv`/`ma2011M.csv`
     * From Ma et al. (2011), "Nonlinear regression equations for segmental mass-inertial characteristics of Korean adults estimated using three-dimensional range scan data", Applied Ergonomics.
-    * Contains both male and female mass proportions
     * Korean population
 
 ## Zatsiorsky's CT scan data
