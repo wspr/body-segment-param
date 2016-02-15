@@ -24,6 +24,7 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 
 * `dempster1955.csv`:
     * Data from Dempster (1955).
+    * Standard deviations can be calculated from data given by Dempster but have been taken from Zatsiorski (2002).
     * The original data can be interpreted in various ways; here, I've omitted entries "Trunk minus shoulders" and "Trunk minus limbs" with the assumption that "Shoulders+Thorax+AbdoPelvis" is good enough (there's around 0.9% difference from doing so).
 
 * `fujikawa1963.csv`
@@ -33,11 +34,13 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 
 * `clauser1969.csv`: Clauser (1969)
 
-* `zats-selu1979f.csv`: From zats's book.
-    * N = ??
+* `zats-selu1979f.csv`:
+    * From Zatsiorski (2002), "Kinetics of Human Motion", Human Kinetics.
+    * N = 15.
 
-* `zats-selu1979m.csv`: From zats's book.
-    * N = 100
+* `zats-selu1979m.csv`
+    * From Zatsiorski (2002), "Kinetics of Human Motion", Human Kinetics.
+    * N = 100.
     * Includes standard deviation.
 
 * `jensen1994.csv`
@@ -65,12 +68,13 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 
 ## Zatsiorsky's CT scan data
 
-This data has been extracted from "Kinetics of Human Motion", input manually by two different people and cross-checked in Matlab for accuracy.
+This data has been extracted from Zatsiorski (2002), "Kinetics of Human Motion", Human Kinetics, input manually by two different people and cross-checked in Matlab for accuracy.
 
 ### Mean data
 
 * `zats-mean-female-bsp.csv`:    Table A2.5
 * `zats-mean-female-comgyr.csv`: Table A2.11
+* `zats-mean-male-bsp.csv`:      Table  4.4
 * `zats-mean-male-comgyr.csv`:   Table A2.11
 
 ### Weight/height regression models
