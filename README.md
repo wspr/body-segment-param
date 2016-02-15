@@ -1,6 +1,14 @@
-# body-segment-param
+# Repository of body segment parameter models
 
-Repository of body segment parameter models.
+This is the main README for this repository. The user-friendly front page is located at <http://wspr.github.io/body-segment-param>.
+
+This repository contains the raw data for a multitude of body segment parameter models.
+Collecting this data, especially in standard form, is a tedious process; we hope that by making this data more widely available, biomechanics researchers (&c.) will be able able to concentrate more on biomechanics rather than copying tables of numbers.
+We also hope that by making a rich set of data available, questions will arise regarding accuracy, scope, and coverage of the models, and that researchers will be more able to chose the appropriate model for their particular application.
+
+This project is quite incomplete! The data added to date has been largely to support our own work. Contributions welcome of course; see the main Github repository and make a pull request.
+
+Models are divided into multiple folders and are described briefly below. Please consult the original publication for each model for further information.
 
 ## Relative mass models
 
@@ -25,7 +33,12 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 
 * `clauser1969.csv`: Clauser (1969)
 
-* `zatz-selu.csv`: From Zatz's book.
+* `zatz-selu1979f.csv`: From Zatz's book.
+    * N = ??
+
+* `zatz-selu1979m.csv`: From Zatz's book.
+    * N = 100
+    * Includes standard deviation.
 
 * `jensen1994.csv`
     * From Jensen and Fletcher (1994), "Distribution of mass to the segments of elderly males and females", Journal of Biomechanics
@@ -38,6 +51,12 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 * `pavol2002`
     * Pavol et al (2002), "Body segment inertial parameter estimation for the general population of older adults", Journal of Biomechanics
     * Older Caucasian population
+
+* `chen2011.csv`
+    * From Chen et al. (2011), "A method for estimating subject-specific body segment inertial parameters in human movement analysis", Gait & Posture.
+    * A kinematic method, unusually.
+    * Contains standard deviation.
+    * N = 12.
 
 * `ma2011.csv`
     * From Ma et al. (2011), "Nonlinear regression equations for segmental mass-inertial characteristics of Korean adults estimated using three-dimensional range scan data", Applied Ergonomics.
