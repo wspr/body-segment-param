@@ -16,11 +16,11 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 
 * `harless1860.csv`
     * Harless (1860)
-    * Found in Zatz's book and Clauser (1969).
+    * Found in zats's book and Clauser (1969).
 
 * `braune1889.csv`
     * Found in Clauser (1969): Braune and Fischer (1889).
-    * Note that the value for the foot mass proportion is given as `1.7` by Clauser and `1.8` by Zatz; comparison with the original text should be done!
+    * Note that the value for the foot mass proportion is given as `1.7` by Clauser and `1.8` by zats; comparison with the original text should be done!
 
 * `dempster1955.csv`:
     * Data from Dempster (1955).
@@ -33,10 +33,10 @@ These are the basic "segment YY is ZZ% of the body mass" models.
 
 * `clauser1969.csv`: Clauser (1969)
 
-* `zatz-selu1979f.csv`: From Zatz's book.
+* `zats-selu1979f.csv`: From zats's book.
     * N = ??
 
-* `zatz-selu1979m.csv`: From Zatz's book.
+* `zats-selu1979m.csv`: From zats's book.
     * N = 100
     * Includes standard deviation.
 
@@ -69,42 +69,42 @@ This data has been extracted from "Kinetics of Human Motion", input manually by 
 
 ### Mean data
 
-* `zatz-mean-female-bsp.csv`:    Table A2.5
-* `zatz-mean-female-comgyr.csv`: Table A2.11
-* `zatz-mean-male-comgyr.csv`:   Table A2.11
+* `zats-mean-female-bsp.csv`:    Table A2.5
+* `zats-mean-female-comgyr.csv`: Table A2.11
+* `zats-mean-male-comgyr.csv`:   Table A2.11
 
 ### Weight/height regression models
 
 Table A2.6:
 
-* `zatz2-male-com.csv`
-* `zatz2-male-mass.csv`
-* `zatz2-male-moi-ap.csv`
-* `zatz2-male-moi-ml.csv`
-* `zatz2-male-moi-si.csv`
+* `zats2-male-com.csv`
+* `zats2-male-mass.csv`
+* `zats2-male-moi-ap.csv`
+* `zats2-male-moi-ml.csv`
+* `zats2-male-moi-si.csv`
 
 Table A2.7:
 
-* `zatz2-female-com.csv`
-* `zatz2-female-mass.csv`
-* `zatz2-female-moi-ap.csv`
-* `zatz2-female-moi-ml.csv`
-* `zatz2-female-moi-si.csv`
+* `zats2-female-com.csv`
+* `zats2-female-mass.csv`
+* `zats2-female-moi-ap.csv`
+* `zats2-female-moi-ml.csv`
+* `zats2-female-moi-si.csv`
 
 ### Geometric regression models (Table A2.8)
 
-* `zatzN-male-abdo.csv`
-* `zatzN-male-arm.csv`
-* `zatzN-male-foot.csv`
-* `zatzN-male-forearm.csv`
-* `zatzN-male-hand.csv`
-* `zatzN-male-headneck.csv`
-* `zatzN-male-leg.csv`
-* `zatzN-male-pelvis.csv`
-* `zatzN-male-thigh.csv`
-* `zatzN-male-thorax.csv`
+* `zatsN-male-abdo.csv`
+* `zatsN-male-arm.csv`
+* `zatsN-male-foot.csv`
+* `zatsN-male-forearm.csv`
+* `zatsN-male-hand.csv`
+* `zatsN-male-headneck.csv`
+* `zatsN-male-leg.csv`
+* `zatsN-male-pelvis.csv`
+* `zatsN-male-thigh.csv`
+* `zatsN-male-thorax.csv`
 
 ### Nonlinear geometric regression models (Table A2.9)
 
-* `zatzNL-female.csv`
-* `zatzNL-male.csv`
+* `zatsNL-female.csv`
+* `zatsNL-male.csv`
