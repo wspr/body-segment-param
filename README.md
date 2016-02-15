@@ -24,24 +24,25 @@ This results in a few cases where, due to rounding errors in the publications, d
 In other cases, care was evidently taken to ensure the segments summed to exactly 100% even with a precision of only 0.1 percentage points.
 
 * `harless1860.csv`
-    * Harless (1860)
-    * Found in zats's book and Clauser (1969).
+    * Harless (1860), "The Static Moments Of The Component Masses Of The Human Body", Royal Bavarian Academy of Science 8:1-2, Unpublished English Translation, Wright-Patterson Air Force Base, Ohio
+    * Data also from Clauser (1969) and Zatsiorski (2002).
 
 * `braune1889.csv`
-    * Found in Clauser (1969): Braune and Fischer (1889).
+    * From Clauser (1969), corresponding to Braune and Fischer (1889), "The Center of Gravity of the Human Body as Related to the German Infantryman", Leipzig.
     * Note that the value for the foot mass proportion is given as `1.7` by Clauser and `1.8` by zats; comparison with the original text should be done!
 
 * `dempster1955.csv`:
-    * Data from Dempster (1955).
+    * From Dempster (1955), "Space requirements for the seated operator", Technical Report WADC TR-55-159, Wright-Patterson Air Force Base, Ohio
     * Standard deviations can be calculated from data given by Dempster but have been taken from Zatsiorski (2002).
     * The original data can be interpreted in various ways; here, I've omitted entries "Trunk minus shoulders" and "Trunk minus limbs" with the assumption that "Shoulders+Thorax+AbdoPelvis" is good enough (there's around 0.9% difference from doing so).
 
 * `fujikawa1963.csv`
-    * Found in Clauser (1969): Fujikawa (1963).
+    * From Clauser (1969), corresponding to Fujikawa (1963), "The center of gravity in the parts of the human body", Okajimas Folia Anatomica Japonica 39.
     * Japanese population.
     * Clauser omits the Fujikawa values from his summary table citing anthropomorphic differences between Caucasian and Japanese populations.
 
-* `clauser1969.csv`: Clauser (1969)
+* `clauser1969.csv`
+    * From Clauser (1969), "Weight, Volume and Center of Mass of Segments of the Human Body", Technical Report AMRL-TR-69-70, Wright Patterson Air Force Base, Ohio
 
 * `zats-selu1979f.csv`:
     * From Zatsiorski (2002), "Kinetics of Human Motion", Human Kinetics.
@@ -124,3 +125,25 @@ Table A2.7:
 
 * `zatsNL-female.csv`
 * `zatsNL-male.csv`
+
+
+## Shan and Bohn's regression data
+
+From Shan and Bohn (2003), "Anthropometrical data and coefficients of regression related to gender and race", Applied Ergonomics
+
+Features:
+  * 2nd order regression (body height and body weight)
+  * N=25 each for four groups:
+    * Chinese male
+    * Chinese female
+    * German male
+    * German female
+  * Mass, segment length, and three moments of inertia reported.
+  * N.B. CoM is not reported as a regression.
+
+Files:
+ * `shanbohn2FC-ix.csv`
+ * `shanbohn2FC-iy.csv`
+ * `shanbohn2FC-iz.csv`
+ * `shanbohn2FC-length.csv`
+ * `shanbohn2FC-mass.csv`
