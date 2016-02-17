@@ -53,6 +53,14 @@ In other cases, care was evidently taken to ensure the segments summed to exactl
     * N = 100.
     * Includes standard deviation.
 
+* `jensen1986-12yr.csv`
+    * From Jensen (1986) "Body segment mass, radius and radius of gyration proportions of children", Journal of Biomechanics
+    * Their study also provides regression equations including age.
+
+* `jensen1989-6yr.csv`/`jensen1989-18yr.csv`
+    * From Jensen (1989) "Changes in segment inertia proportions between 4 and 20 years", Journal of Biomechanics
+    * 6yr vs 18yr. Their study also provides regression equations including age.
+
 * `jensen1994F.csv`/`jensen1994M.csv`
     * From Jensen and Fletcher (1994), "Distribution of mass to the segments of elderly males and females", Journal of Biomechanics
     * Elderly population
