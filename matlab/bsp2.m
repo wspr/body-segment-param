@@ -19,11 +19,11 @@ model = calc_models(model);
 segments = {'head','thorax','abdo','pelvis','thigh','shank','foot','arm','forearm','hand'};
 S = numel(segments);
 
-param_calc = {'mass'};
+param_calc = {'mass','moiap'};
 P = numel(param_calc);
 
 for pp = 1:P
-  val = table(nan(S,0),'RowNames',segments);
+  val{pp} = table(nan(S,0),'RowNames',segments);
 end
 
 
@@ -32,13 +32,10 @@ end
   function model = init_models(mnames)
     
     if nargin == 0
-      mnames = {'shan-bohn-2FC'};
+      mnames = {'shan-bohn-MC'};
     end
     
-    model = [];
-    
-    ii = numel(model)+1;
-    model(ii).name  = 'shan-bohn-2FC';
+    model = struct('name',mnames);
     
   end
 
@@ -55,7 +52,7 @@ end
       
       model(ii).NP    = numel(model(ii).param);
 
-    for jj = 1:model(ii).NP
+      for jj = 1:model(ii).NP
         param = model(ii).param{jj};
         filename = [prefix,'-',param,'.csv'];
         model(ii).regr.(param) = importdata(filename);
