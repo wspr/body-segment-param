@@ -1,42 +1,40 @@
-function [val,model] = bsp2(MASS,HEIGHT,varargin)
+function [tableval,model] = bsp2(MASS,HEIGHT,varargin)
 
 if nargin == 0
   MASS = 70; HEIGHT = 1.8;
 end
 
-MASS_g    = MASS*1000;
-HEIGHT_cm = HEIGHT*100;
+model_names = {'shan-bohn-MC','shan-bohn-MC'};
+segments = {'head','shoulder','thorax','abdo','pelvis','thigh','shank','foot','arm','forearm','hand'};
+param_calc = {'mass','moi-ap'};
 
 REPO_PATH = '/Users/will/Repo/Biomech/body-segment-param';
 DATA_PATH = [REPO_PATH,'/data/regr-mass-height/'];
 
-model = init_models();
-M = numel(model);
+M = numel(model_names);
+S = numel(segments);
+P = numel(param_calc);
 
+model = init_models(model_names);
 model = read_models(model);
 model = calc_models(model);
 
-segments = {'head','thorax','abdo','pelvis','thigh','shank','foot','arm','forearm','hand'};
-S = numel(segments);
-
-param_calc = {'mass','moiap'};
-P = numel(param_calc);
-
 for pp = 1:P
-  val{pp} = table(nan(S,0),'RowNames',segments);
+  tableval(pp).name = param_calc{pp};
+  tableval(pp).res  = [];
+  
+  for mm = 1:M
+    ind = strcmp(model(mm).param,tableval(pp).name);
+    tableval(pp).res = [tableval(pp).res; array2table(model(mm).calc(ind).val.',...
+      'RowNames',{regexprep([num2str(mm),'_',model(mm).name],'-','_')},'VariableNames',model(mm).rows)];
+  end  
 end
 
 
 %% Subfunctions
 
   function model = init_models(mnames)
-    
-    if nargin == 0
-      mnames = {'shan-bohn-MC'};
-    end
-    
-    model = struct('name',mnames);
-    
+    model = struct('name',mnames); 
   end
 
   function model = read_models(model)
@@ -55,8 +53,9 @@ end
       for jj = 1:model(ii).NP
         param = model(ii).param{jj};
         filename = [prefix,'-',param,'.csv'];
-        model(ii).regr.(param) = importdata(filename);
-        model(ii).calc.(param) = [];
+        model(ii).regr(jj).coeff = importdata(filename);
+        model(ii).calc(jj).val  = [];
+        model(ii).calc(jj).name = param;
       end
       
     end
@@ -68,9 +67,8 @@ end
     for ii = 1:M
       regr_var = [1;MASS;HEIGHT]./model(ii).units([1;2;3]);
       for jj = 1:model(ii).NP
-        param = model(ii).param{jj};
-        model(ii).calc.(param) = ...
-          model(ii).regr.(param)(:,[1,2,3]) * regr_var;
+        model(ii).calc(jj).val = ...
+          model(ii).regr(jj).coeff(:,[1,2,3]) * regr_var;
       end
     end
     
