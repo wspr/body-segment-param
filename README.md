@@ -35,6 +35,7 @@ In other cases, care was evidently taken to ensure the segments summed to exactl
     * From Dempster (1955), "Space requirements for the seated operator", Technical Report WADC TR-55-159, Wright-Patterson Air Force Base, Ohio
     * Standard deviations can be calculated from data given by Dempster but have been taken from Zatsiorski (2002).
     * The original data can be interpreted in various ways; here, I've omitted entries "Trunk minus shoulders" and "Trunk minus limbs" with the assumption that "Shoulders+Thorax+AbdoPelvis" is good enough (there's around 0.9% difference from doing so).
+    * To avoid confusion with other models, I've renamed "Thorax" to "Chest" since it omits the shoulders. (Technically thorax means chest in Latin, but the disambiguation seemed to work okay.)
 
 * `fujikawa1963.csv`
     * From Clauser (1969), corresponding to Fujikawa (1963), "The center of gravity in the parts of the human body", Okajimas Folia Anatomica Japonica 39.
@@ -102,19 +103,19 @@ This data has been extracted from Zatsiorski (2002), "Kinetics of Human Motion",
 
 Table A2.6:
 
-* `zats2-male-com.csv`
-* `zats2-male-mass.csv`
-* `zats2-male-moi-ap.csv`
-* `zats2-male-moi-ml.csv`
-* `zats2-male-moi-si.csv`
+* `regr-mass-height/zats2-male-com.csv`
+* `regr-mass-height/zats2-male-mass.csv`
+* `regr-mass-height/zats2-male-moi-ap.csv`
+* `regr-mass-height/zats2-male-moi-ml.csv`
+* `regr-mass-height/zats2-male-moi-si.csv`
 
 Table A2.7:
 
-* `zats2-female-com.csv`
-* `zats2-female-mass.csv`
-* `zats2-female-moi-ap.csv`
-* `zats2-female-moi-ml.csv`
-* `zats2-female-moi-si.csv`
+* `regr-mass-height/zats2-female-com.csv`
+* `regr-mass-height/zats2-female-mass.csv`
+* `regr-mass-height/zats2-female-moi-ap.csv`
+* `regr-mass-height/zats2-female-moi-ml.csv`
+* `regr-mass-height/zats2-female-moi-si.csv`
 
 ### Geometric regression models (Table A2.8)
 
@@ -135,7 +136,7 @@ Table A2.7:
 * `zatsNL-male.csv`
 
 
-## Shan and Bohn's regression data
+## Shan and Bohn (2003)
 
 From Shan and Bohn (2003), "Anthropometrical data and coefficients of regression related to gender and race", Applied Ergonomics
 
@@ -150,8 +151,8 @@ Features:
   * N.B. CoM is not reported as a regression.
 
 Files:
- * `shanbohn2FC-ix.csv`
- * `shanbohn2FC-iy.csv`
- * `shanbohn2FC-iz.csv`
- * `shanbohn2FC-length.csv`
- * `shanbohn2FC-mass.csv`
+ * `regr-mass-height/shanbohn2FC-ix.csv`
+ * `regr-mass-height/shanbohn2FC-iy.csv`
+ * `regr-mass-height/shanbohn2FC-iz.csv`
+ * `regr-mass-height/shanbohn2FC-length.csv`
+ * `regr-mass-height/shanbohn2FC-mass.csv`
