@@ -9,9 +9,14 @@ bsp_mass = table();
 %
 % col 1 = segment, column 2 = original data, column 3 = rescaled to 100%
 
-omitted = {'jensen1989-6yr'};
-modfilenames = {'harless1860','braune1889','dempster1955','fujikawa1963',...
-  'clauser1969','zats-selu1979m','zats-selu1979f','jensen1989-18yr','jensen1994M','jensen1994F','cheng2000','pavol2002M','pavol2002F','chen2011','ma2011M','ma2011F'};
+%omitted = {};
+modfilenames = {'harless1860','braune1889','dempster1955',...
+  'fujikawa1963',...
+  'clauser1969','zats-selu1979m','zats-selu1979f',...
+  'jensen1989-6yr','jensen1986-12yr',...
+  ...'jensen1986-15yr',...
+  'jensen1989-18yr',...
+  'jensen1994M','jensen1994F','cheng2000','pavol2002M','pavol2002F','chen2011','ma2011M','ma2011F'};
 
 for mm = 1:numel(modfilenames)
   T = readtable([datapath,modfilenames{mm},'.csv']);
@@ -56,8 +61,6 @@ for mm = 1:numel(modnames)
   end
 
 end
-
-
 
 %%
 

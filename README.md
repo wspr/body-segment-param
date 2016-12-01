@@ -37,6 +37,9 @@ In other cases, care was evidently taken to ensure the segments summed to exactl
     * The original data can be interpreted in various ways; here, I've omitted entries "Trunk minus shoulders" and "Trunk minus limbs" with the assumption that "Shoulders+Thorax+AbdoPelvis" is good enough (there's around 0.9% difference from doing so).
     * To avoid confusion with other models, I've renamed "Thorax" to "Chest" since it omits the shoulders. (Technically thorax means chest in Latin, but the disambiguation seemed to work okay.)
 
+* `drillis1968.csv`
+    * From Clauser (1969), corresponding to Drillis and Contini (1968)
+
 * `fujikawa1963.csv`
     * From Clauser (1969), corresponding to Fujikawa (1963), "The center of gravity in the parts of the human body", Okajimas Folia Anatomica Japonica 39.
     * Japanese population.
@@ -44,6 +47,8 @@ In other cases, care was evidently taken to ensure the segments summed to exactl
 
 * `clauser1969.csv`
     * From Clauser (1969), "Weight, Volume and Center of Mass of Segments of the Human Body", Technical Report AMRL-TR-69-70, Wright Patterson Air Force Base, Ohio
+    * N = 13.
+    * Contains COM and standard deviations.
 
 * `zats-selu1979f.csv`:
     * From Zatsiorski (2002), "Kinetics of Human Motion", Human Kinetics.
