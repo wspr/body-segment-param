@@ -82,6 +82,13 @@ In other cases, care was evidently taken to ensure the segments summed to exactl
     * Older Caucasian population.
     * Includes standard deviation.
 
+* `nicolova2007F.csv` / `nicolova2007M.csv`
+    * From Nicolova et al (2007) "Estimation of male and female body segment parameters of the Bulgarian population using a 16-segmental mathematical model", Journal of Biomechanics
+    * Data generated from a geometric method.
+    * Includes CoM and Volume.
+    * Publication includes MoI but is not included here.
+    * N = 2855 / 2435 (!!).
+
 * `chen2011.csv`
     * From Chen et al. (2011), "A method for estimating subject-specific body segment inertial parameters in human movement analysis", Gait & Posture.
     * A kinematic method, unusually.
