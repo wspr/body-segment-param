@@ -59,7 +59,7 @@ In other cases, care was evidently taken to ensure the segments summed to exactl
     * N = 100.
     * Includes standard deviation.
 
-* `jensen1986-12yr.csv`
+* `jensen1986-12yr.csv`/`jensen1986-15yr.csv`
     * From Jensen (1986) "Body segment mass, radius and radius of gyration proportions of children", Journal of Biomechanics
     * Their study also provides regression equations including age.
 
