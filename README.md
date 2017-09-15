@@ -36,6 +36,7 @@ In other cases, care was evidently taken to ensure the segments summed to exactl
     * Standard deviations can be calculated from data given by Dempster but have been taken from Zatsiorski (2002).
     * The original data can be interpreted in various ways; here, I've omitted entries "Trunk minus shoulders" and "Trunk minus limbs" with the assumption that "Shoulders+Thorax+AbdoPelvis" is good enough (there's around 0.9% difference from doing so).
     * To avoid confusion with other models, I've renamed "Thorax" to "Chest" since it omits the shoulders. (Technically thorax means chest in Latin, but the disambiguation seemed to work okay.)
+    * N = 8 (except one is suspicious).
 
 * `drillis1968.csv`
     * From Clauser (1969), corresponding to Drillis and Contini (1968)
@@ -168,3 +169,5 @@ Files:
  * `regr-mass-height/shanbohn2FC-iz.csv`
  * `regr-mass-height/shanbohn2FC-length.csv`
  * `regr-mass-height/shanbohn2FC-mass.csv`
+
+
