@@ -1,6 +1,6 @@
 # Repository of body segment parameter models
 
-This is the main README for this repository. The user-friendly front page is located at <http://wspr.github.io/body-segment-param>.
+This is the main README for this repository. The user-friendly front page is located at <http://wspr.io/body-segment-param>.
 
 This repository contains the raw data for a multitude of body segment parameter models.
 Collecting this data, especially in standard form, is a tedious process; we hope that by making this data more widely available, biomechanics researchers (&c.) will be able able to concentrate more on biomechanics rather than copying tables of numbers.
@@ -154,6 +154,7 @@ Table A2.7:
 From Shan and Bohn (2003), "Anthropometrical data and coefficients of regression related to gender and race", Applied Ergonomics
 
 Features:
+
   * 2nd order regression (body height and body weight)
   * N=25 each for four groups:
     * Chinese male
@@ -164,6 +165,7 @@ Features:
   * N.B. CoM is not reported as a regression.
 
 Files:
+
  * `regr-mass-height/shanbohn2FC-ix.csv`
  * `regr-mass-height/shanbohn2FC-iy.csv`
  * `regr-mass-height/shanbohn2FC-iz.csv`
